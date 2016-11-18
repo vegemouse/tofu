@@ -41,7 +41,7 @@ a {
   color: #556644;
   text-decoration: none;
   font-weight: normal;
-  transition: letter-spacing 1s ease-in-out, opacity 300ms ease-in-out, padding-left 1s ease-in-out, background-color 1s ease-in-out, color 1s ease-in-out;
+  transition: letter-spacing 400ms ease-in-out, opacity 200ms ease-in-out, padding-left 400ms ease-in-out, background-color 400ms ease-in-out, color 400ms ease-in-out;
   opacity: 0.7;
 }
 
@@ -69,7 +69,7 @@ a {
   letter-spacing: 3px;
   font-size: 1.2em;
   opacity: 0.7;
-  transition: opacity 300ms;
+  transition: opacity 200ms;
 }
 
 #menu li:hover {
@@ -83,7 +83,7 @@ a {
   color: #556644;
   border-radius: 5px;
   padding: 7px 14px;
-  transition: background-color 300ms, color 300ms;
+  transition: background-color 200ms, color 200ms;
   position: relative;
   right: 10px;
 }
@@ -144,7 +144,7 @@ a {
   letter-spacing: 2px;
   color: white;
   background-color: transparent;
-  transition: background-color 300ms, color 300ms;
+  transition: background-color 200ms, color 200ms;
 }
 
 #jumbo p button:hover {
@@ -234,7 +234,7 @@ tr td:first-of-type {
   color: #334422;
   opacity: 0.8;
   letter-spacing: 1px;
-  transition: opacity 300ms, letter-spacing 300ms;
+  transition: opacity 200ms, letter-spacing 200ms;
 }
 
 #about ul li a:hover {
@@ -257,7 +257,7 @@ tr td:first-of-type {
   display: block;
   float: left;
   opacity: 0.9;
-  transition: opacity 300ms;
+  transition: opacity 200ms;
 }
 
 #gallery img:hover {
@@ -296,7 +296,7 @@ tr td:first-of-type {
 #bottom p a {
   letter-spacing: 1px;
   opacity: 0.7;
-  transition: opacity 300ms;
+  transition: opacity 200ms;
 }
 
 #bottom p a:hover {
@@ -353,19 +353,19 @@ tr td:first-of-type {
     z-index: 3;
     border-radius: 0 0 0 10px;
     overflow: hidden;
-    opacity: 0.6;
-    transition: opacity 300ms, height 300ms;
+    transition: height 200ms;
   }
 
   #mobile-menu img {
     width: 70px;
     margin-bottom: 30px;
     margin-left: 90px;
+    opacity: 0.8;
   }
 
   #mobile-menu ul {
     margin: 0;
-    padding: 0 0 20px 0;
+    padding: 0;
     list-style-type: none;
   }
 
@@ -374,15 +374,21 @@ tr td:first-of-type {
     padding: 10px;
     font-weight: bold;
     opacity: 0.7;
+    transition: letter-spacing 200ms ease-in-out, opacity 200ms;
+    color: #445533;
   }
 
   #mobile-menu ul li:hover {
     opacity: 1;
+    letter-spacing: 1px;
   }
 
   #mobile-menu:hover {
-    height: 35%;
+    height: 37%;
     cursor: pointer;
-    opacity: 0.8;
+  }
+
+  #bottom p {
+    font-size: 0.8em;
   }
 }
