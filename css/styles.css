@@ -360,7 +360,12 @@ tr td:first-of-type {
     width: 70px;
     margin-bottom: 30px;
     margin-left: 90px;
-    opacity: 0.8;
+    opacity: 0.6;
+    transition: opacity 200ms;
+  }
+
+  #mobile-menu:hover img {
+    opacity: 0.75;
   }
 
   #mobile-menu ul {
