@@ -26,7 +26,7 @@ a {
 
 #top {
   margin: 5px 5vw;
-  height: 15vh;
+  height: 100px;
 }
 
 #top h1 {
@@ -346,7 +346,7 @@ tr td:first-of-type {
     position: absolute;
     right: 0px;
     width: 200px;
-    height: 13vh;
+    height: 80px;
     top: 20px;
     text-align: center;
     background-color: #fefffc;
