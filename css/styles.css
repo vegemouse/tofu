@@ -26,7 +26,7 @@ a {
 
 #top {
   margin: 5px 5vw;
-  height: 12.75vh;
+  height: 15vh;
 }
 
 #top h1 {
@@ -346,7 +346,7 @@ tr td:first-of-type {
     position: absolute;
     right: 0px;
     width: 200px;
-    height: 11vh;
+    height: 13vh;
     top: 20px;
     text-align: center;
     background-color: #fefffc;
@@ -389,7 +389,7 @@ tr td:first-of-type {
   }
 
   #mobile-menu:hover {
-    height: 37%;
+    height: 255px;
     cursor: pointer;
   }
 
