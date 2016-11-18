@@ -17,8 +17,16 @@ a {
   text-decoration: none;
 }
 
+.reg {
+  font-size: 1rem;
+  position: relative;
+  bottom: 20%;
+  font-family: 'Raleway', sans-serif;
+}
+
 #top {
-  margin: 0 30px;
+  margin: 5px 5vw;
+  height: 12.75vh;
 }
 
 #top h1 {
@@ -29,17 +37,20 @@ a {
 #top h1 a {
   font-size: 2.6em;
   font-family: 'Tulpen One', cursive;
-  letter-spacing: 3px;
+  letter-spacing: 1vh;
   color: #556644;
   text-decoration: none;
   font-weight: normal;
-  transition: letter-spacing 300ms, opacity 300ms;
+  transition: letter-spacing 1s ease-in-out, opacity 300ms ease-in-out, padding-left 1s ease-in-out, background-color 1s ease-in-out, color 1s ease-in-out;
   opacity: 0.7;
 }
 
 #top h1 a:hover {
   opacity: 1;
-  letter-spacing: 20px;
+  letter-spacing: 3vw;
+  background-color: #556644;
+  color: #fefffc;
+  padding-left: 4vw;
 }
 
 #menu {
@@ -47,6 +58,7 @@ a {
   list-style-type: none;
   margin-top: 40px;
   margin-right: 20px;
+  display: block;
 }
 
 #menu li {
@@ -56,7 +68,7 @@ a {
   letter-spacing: 3px;
   font-size: 1.2em;
   opacity: 0.7;
-  transition: opacity 400ms;
+  transition: opacity 300ms;
 }
 
 #menu li:hover {
@@ -65,11 +77,14 @@ a {
 
 #menu li:nth-child(3) {
   background-color: transparent;
-  border: 2px solid #334422;
-  color: #334422;
+  border: 2px solid #556644;
+  letter-spacing: 3px;
+  color: #556644;
   border-radius: 5px;
-  padding: 6px 14px;
+  padding: 7px 14px;
   transition: background-color 300ms, color 300ms;
+  position: relative;
+  right: 10px;
 }
 
 #menu li:nth-child(3) a {
@@ -77,7 +92,7 @@ a {
 }
 
 #menu li:nth-child(3):hover {
-  background-color: #334422;
+  background-color: #556644;
   color: white;
   cursor: pointer;
 }
@@ -120,7 +135,7 @@ a {
   width: 130px;
   height: 50px;
   border-radius: 10px;
-  border: 5px solid white;
+  border: 3px solid white;
   letter-spacing: 2px;
   color: white;
   background-color: transparent;
@@ -129,7 +144,7 @@ a {
 
 #jumbo p button:hover {
   background-color: #fff;
-  color: #112200;
+  color: #334422;
   cursor: pointer;
 }
 
@@ -147,7 +162,45 @@ a {
 }
 
 #about h2 {
-  font-size: 2em;
+  font-size: 2.75em;
+  letter-spacing: 2px;
+}
+
+#about table {
+  border-collapse: collapse;
+  border: 2px solid #445533;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+tr:nth-of-type(n+2) {
+  border: 2px solid #889977;
+}
+
+tr:nth-of-type(even) {
+  background-color: #e4e8dc;
+}
+
+tr th {
+  background-color: #445533;
+  color: white;
+  padding: 2px 10px;
+  text-align: left;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+tr td {
+  padding: 0px 10px;
+  text-align: left;
+  border-left: 2px solid #889977;
+  color: #667755;
+}
+
+tr td:first-of-type {
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-align: left;
 }
 
 #about ul {
@@ -156,6 +209,7 @@ a {
 
 #about ul li {
   margin-bottom: 5px;
+  font-weight: 600;
 }
 
 #about ul li a {
@@ -163,17 +217,18 @@ a {
   color: #334422;
   opacity: 0.8;
   letter-spacing: 1px;
-  transition: opacity 300ms;
+  transition: opacity 300ms, letter-spacing 300ms;
 }
 
 #about ul li a:hover {
   opacity: 1;
+  letter-spacing: 2px;
   text-decoration: underline;
 }
 
 #gallery {
   width: 50%;
-  padding: 4vh 5vw 4vh 0;
+  padding: 5vh 5vw 4vh 0vw;
   float: right;
   font-size: 1.1em;
   position: relative;
@@ -181,12 +236,10 @@ a {
 
 #gallery img {
   width: 33.3%;
-  padding: 1%;
-  height: 30vh;
   object-fit: cover;
   display: block;
   float: left;
-  opacity: 0.7;
+  opacity: 0.9;
   transition: opacity 300ms;
 }
 
@@ -195,6 +248,24 @@ a {
   cursor: pointer;
 }
 
-/*#gallery img:hover ~ img{
-  display:none;
-}*/
+#main:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+#bottom {
+  background-color: #334422;
+  width: 100%;
+  height: 300px;
+  color: #fefffc;
+  position: relative;
+  text-align: center;
+}
+
+#bottom p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
