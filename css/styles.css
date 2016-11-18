@@ -51,6 +51,7 @@ a {
   background-color: #556644;
   color: #fefffc;
   padding-left: 4vw;
+  position: relative;
 }
 
 #menu {
@@ -95,6 +96,10 @@ a {
   background-color: #556644;
   color: white;
   cursor: pointer;
+}
+
+#mobile-menu {
+  display: none;
 }
 
 #top:after {
@@ -185,14 +190,18 @@ tr th {
   background-color: #445533;
   color: white;
   padding: 2px 10px;
-  text-align: left;
+  text-align: center;
   letter-spacing: 3px;
   font-weight: 400;
 }
 
+tr th:first-of-type {
+  text-align: left;
+}
+
 tr td {
   padding: 0px 10px;
-  text-align: left;
+  text-align: center;
   border-left: 2px solid #889977;
   color: #667755;
 }
@@ -210,12 +219,14 @@ tr td:first-of-type {
 }
 
 #about ul {
-  padding-top: 10px;
+  padding: 0;
 }
 
 #about ul li {
   margin-bottom: 5px;
   font-weight: 600;
+  list-style-position: inside;
+  list-style-type: none;
 }
 
 #about ul li a {
@@ -263,7 +274,7 @@ tr td:first-of-type {
 #bottom {
   background-color: #334422;
   width: 100%;
-  height: 300px;
+  height: 40vh;
   color: #fefffc;
   position: relative;
   text-align: center;
@@ -286,4 +297,86 @@ tr td:first-of-type {
 #bottom p a:hover {
   letter-spacing: 1px;
   opacity: 1;
+}
+
+@media (max-width: 900px) {
+  #about h2 {
+    font-size: 2em;
+  }
+
+  #gallery, #about {
+    float: none;
+  }
+
+  #about {
+    padding: 0;
+    margin: 20px 0 50px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  #gallery {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #gallery:before {
+    width: 100%;
+    border-top: 2px solid #ccddbb;
+    padding-top: 60px;
+    content: "";
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  #menu {
+    display: none;
+  }
+
+  #mobile-menu {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    height: 11vh;
+    top: 20px;
+    text-align: center;
+    background-color: #fefffc;
+    z-index: 3;
+    border-radius: 0 0 0 10px;
+    overflow: hidden;
+    opacity: 0.6;
+    transition: opacity 300ms, height 300ms;
+  }
+
+  #mobile-menu img {
+    width: 70px;
+    margin-bottom: 30px;
+    margin-left: 90px;
+  }
+
+  #mobile-menu ul {
+    margin: 0;
+    padding: 0 0 20px 0;
+    list-style-type: none;
+  }
+
+  #mobile-menu ul li {
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: bold;
+    opacity: 0.7;
+  }
+
+  #mobile-menu ul li:hover {
+    opacity: 1;
+  }
+
+  #mobile-menu:hover {
+    height: 35%;
+    cursor: pointer;
+    opacity: 0.8;
+  }
 }
