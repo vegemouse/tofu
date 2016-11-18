@@ -203,6 +203,12 @@ tr td:first-of-type {
   text-align: left;
 }
 
+.small {
+  font-size: 0.8em;
+  margin: 0;
+  opacity: 0.8;
+}
+
 #about ul {
   padding-top: 10px;
 }
@@ -268,4 +274,16 @@ tr td:first-of-type {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  line-height: 40px;
+}
+
+#bottom p a {
+  letter-spacing: 1px;
+  opacity: 0.7;
+  transition: opacity 300ms;
+}
+
+#bottom p a:hover {
+  letter-spacing: 1px;
+  opacity: 1;
 }
